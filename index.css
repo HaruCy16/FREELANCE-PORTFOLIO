@@ -18,6 +18,21 @@ section {
   height: 100vh;
   width: 100%;
   background-color: rgb(192, 192, 192);
+  border-bottom: 1px solid rgb(131, 131, 131);
+}
+
+.section-header {
+  height: 10%;
+  padding-top: 1rem;
+  color: rgb(0, 0, 0);
+  padding-bottom: 0.5rem;
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 5px rgb(102, 102, 102) solid;
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
 
 /*NAVIGATION*/
@@ -68,7 +83,6 @@ nav a:hover {
   width: 50%;
   text-align: end;
   color: #545454;
-  margin-bottom: 10%;
   margin-right: 10%;
 }
 
@@ -80,4 +94,51 @@ nav a:hover {
 
 .intro h2 {
   font-size: 4rem;
+}
+.bottom-row {
+  margin-top: 15rem;
+}
+.bottom-row a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.button-row a i {
+  font-size: 5rem;
+}
+
+.bottom-row a:hover {
+  color: rgb(0, 60, 172);
+}
+
+/*ABOUT SECTION*/
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.about-profile {
+  width: 50%;
+}
+
+.about-profile img {
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 20rem;
+}
+
+.about-description {
+  width: 50%;
+}
+
+.about-description p {
+  width: 50%;
+  text-align: justify;
+  font-size: 2rem;
+  color: #545454;
 }
