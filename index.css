@@ -75,7 +75,7 @@ nav a:hover {
   width: 550px;
   height: 550px;
   margin-left: 30%;
-  border-radius: 50%;
+  border-radius: 53% 47% 30% 70% / 34% 93% 7% 66%;
   object-fit: cover;
 }
 
@@ -89,11 +89,12 @@ nav a:hover {
 .intro h1 {
   font-family: Poppins;
   font-size: 7rem;
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 
 .intro h2 {
   font-size: 4rem;
+  margin-top: 0;
 }
 .bottom-row {
   margin-top: 15rem;
@@ -127,7 +128,7 @@ nav a:hover {
 .about-profile img {
   width: 550px;
   height: 550px;
-  border-radius: 50%;
+  border-radius: 34% 66% 75% 25% / 22% 54% 46% 78%;
   object-fit: cover;
   margin-left: 20rem;
 }
@@ -141,4 +142,48 @@ nav a:hover {
   text-align: justify;
   font-size: 2rem;
   color: #545454;
+}
+
+/* SKILLS SECTION */
+.skills-content {
+  display: flex;
+  flex-direction: column;
+  /* Align children vertically */
+}
+
+.skills-first,
+.skills-second {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem; /* Optional: Adjust alignment of skills */
+  perspective: 1000px;
+}
+
+/*IMAGES STYLES*/
+.skills-content img {
+  height: 270px;
+  width: 550px;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.skills-content p {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #545454;
+}
+
+/*FLIP EFFECT*/
+.my-skill img {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease-in-out;
+}
+
+.my-skill img:hover {
+  transform: rotateX(180deg);
+  cursor: pointer;
 }
