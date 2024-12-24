@@ -23,7 +23,7 @@
   </head>
   <body>
     <!--NAVIGATION-->
-    <nav>
+    <nav id="navigationBar">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
@@ -96,5 +96,96 @@
         </div>
       </div>
     </section>
+    <!--PROJECTS SECTION-->
+    <section id="projects">
+      <div class="section-header">
+        <h2>Projects</h2>
+      </div>
+      <div class="projects-content">
+        <div class="projects-list">
+          <div class="my-projects">
+            <a href="https://vs-ai-rock-paper-scissors-game.vercel.app/" target="_blank" rel="noopener" title="VS AI Rock, Paper, Scissors Game">
+              <img src="projects_images/rock-paper-scissors.png" alt="Rock Paper Scissors">
+            </a>
+            <div class="project-title">
+              <h3> VS A.I Rock Paper Scissors</h3>
+            </div>
+          </div>
+          <div class="my-projects">
+            <a href="https://weather-app-kohl-xi-85.vercel.app/" target="_blank" rel="noopener" title="Weather Website">
+              <img src="projects_images/weather-app.png" alt="Weather App">
+            </a>
+            <div class="project-title">
+              <h3>Weather App</h3>
+            </div>
+          </div>
+          <div class="my-projects">
+            <a href="https://genshin-impact-sand.vercel.app/" target="_blank" rel="noopener" title="Genshin Impact (Landing Page)">
+              <img src="projects_images/genshin-impact.png" alt="Genshin Impact Landing page">
+            </a>
+           
+            <div class="project-title">
+              <h3>Genshin Impact Landing Page</h3>
+            </div>
+          </div>
+          <div class="my-projects">
+            <a href="https://pokedex-ochre-omega-98.vercel.app/" target="_blank" rel="noopener" title="Pokedex">
+              <img src="projects_images/pokedex.png" alt="Pokedex">
+            </a>
+            <div class="project-title">
+              <h3>Pokedex</h3>
+            </div>
+          </div>
+        </div>
+        <div class="projects-footer">
+          <h2>More Projects</h2><br>
+          <p>Video Editing, Programming</p> <!--TO CHANGE, ADD LINKS TO GDRIVE AND GITHUB-->
+        </div>
+      </div>
+    </section>
+    <!--CONTACTS SECTION-->
+    <section id="contacts">
+      <div class="section-header">
+        <h2>Contacts</h2>
+      </div>
+      <div class="contacts-content">
+        <div class="contacts-left">
+          <div class="contact-info">
+            <h2>Connect with Me!</h2>
+            <p><i class="fa-solid fa-envelope"></i> cywilson165@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> (+63) 991 083 2030</p>
+          </div>
+          <div class="contact-links">
+            <a href="https://github.com/HaruCy16" title="Github" target="_blank" rel="noopener">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/cyrus-wilson-59a28b265/" title="LinkedIn" target="_blank rel="noopener">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="" title="TikTok" target="_blank" rel="noopener">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="https://www.instagram.com/_cywilson_/" title="Instagram" target="_blank" rel="noopener">
+              <i class="fa-brands fa-instagram"></i>  
+            </a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Your Name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="your.email@gmail.com" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea><br>
+            <input type="submit" value="Submit" id="submitBtn">
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>&copy;2024 Cyrus Wilson. All rights reserved</p>
+    </footer>
+    <script src="index.js"></script>
   </body>
 </html>
