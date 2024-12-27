@@ -75,14 +75,26 @@ nav a:hover {
 
 .profile-image {
   width: 50%;
-}
-
-.profile-image img {
   width: 550px;
   height: 550px;
-  margin-left: 30%;
-  border-radius: 53% 47% 30% 70% / 34% 93% 7% 66%;
+  margin-left: 10%;
+  border-radius: 26% 74% 31% 69% / 69% 73% 27% 31%;
+  overflow: hidden; /* Ensure the image stays within the container */
+}
+
+#heroImage {
+  width: 550px;
+  height: 550px;
   object-fit: cover;
+  transition: opacity 1s ease-out;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 1;
 }
 
 .intro {
@@ -99,8 +111,10 @@ nav a:hover {
 }
 
 .intro h2 {
-  font-size: 4rem;
+  color: rgb(16, 16, 70);
+  font-size: 3rem;
   margin-top: 0;
+  transition: opacity 1s ease-out;
 }
 .bottom-row {
   margin-top: 15rem;
