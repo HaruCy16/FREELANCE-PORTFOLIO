@@ -148,7 +148,7 @@ nav a:hover {
 .about-profile img {
   width: 550px;
   height: 550px;
-  border-radius: 34% 66% 75% 25% / 22% 54% 46% 78%;
+  border-radius: 33% 67% 22% 78% / 73% 11% 89% 27%;
   object-fit: cover;
   margin-left: 20rem;
 }
@@ -388,4 +388,143 @@ footer p {
   background-color: rgb(192, 192, 192);
   text-align: center;
   border: none;
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 768px) {
+  /*MAIN STYLES*/
+  section {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .section-header {
+    height: 5%;
+    font-size: 1rem;
+  }
+  /*HERO*/
+  #hero {
+    flex-direction: column;
+  }
+
+  .profile-image {
+    display: none;
+  }
+
+  .intro {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .intro h1 {
+    font-size: 4rem;
+  }
+
+  #myTitle {
+    font-size: 1.5rem;
+  }
+  /*ABOUT*/
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-profile {
+    width: 70%;
+  }
+
+  .about-profile img {
+    height: 300px;
+    width: 300px;
+    margin-left: 0;
+  }
+
+  .about-description {
+    width: 95%;
+    margin: 0;
+  }
+
+  .about-description p {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  /*SKILLS*/
+  .skills-content {
+    overflow-y: scroll;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30%;
+  }
+
+  .my-skill {
+    margin-left: 4rem;
+    margin-right: 3rem;
+  }
+
+  .my-skill img {
+    height: 200px;
+    width: 300px;
+  }
+
+  /*PROJECTS*/
+  .projects-content {
+    overflow-y: scroll;
+    white-space: nowrap;
+    justify-content: start;
+    align-items: start;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .projects-list {
+    gap: 5rem;
+  }
+
+  .my-projects {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  /*CONNECT*/
+  #connect {
+    height: 200%;
+  }
+
+  #connect .section-header {
+    height: auto;
+  }
+
+  #connect .section-header h2 {
+    margin-bottom: 0;
+  }
+
+  .connect-content {
+    flex-direction: column-reverse;
+  }
+
+  /*top*/
+  .connect-right {
+    width: 80%;
+    height: 200%;
+    margin-right: 0;
+    margin-top: 10rem;
+  }
+
+  .my-services {
+    height: 70%;
+  }
+
+  .service-title {
+    height: 50%;
+    font-size: 1rem;
+  }
+
+  /*bottom*/
+  .connect-left {
+    width: 100%;
+    padding-left: 0;
+  }
 }
