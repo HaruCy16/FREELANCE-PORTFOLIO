@@ -247,7 +247,7 @@ nav a:hover {
 }
 
 /*CONTACTS SECTION*/
-.contacts-content {
+.connect-content {
   height: 85%;
   width: 100%;
   display: flex;
@@ -256,43 +256,78 @@ nav a:hover {
 }
 
 /*CONTACT INFO*/
-.contacts-left {
+.connect-left {
   padding-left: 10rem;
   width: 50%;
   height: 85%;
 }
-.contact-info h2 {
+.connect-info h2 {
   font-size: 150px;
   text-align: justify;
   margin: 0;
 }
-.contact-info p {
+.connect-info p {
   font-size: 1.5rem;
 }
 
 /*SOCIAL MEDIA LINKS*/
-.contact-links {
+.connect-links {
   display: flex;
   gap: 5rem;
 }
-.contact-links a {
+.connect-links a {
   text-decoration: none;
   color: rgb(0, 0, 0);
   font-size: 2rem;
 }
 
-.contact-links a:hover {
+.connect-links a:hover {
   color: rgb(0, 60, 172);
 }
 
-/*CONTACT FORM*/
-.contact-right {
+/*SERVICES*/
+.connect-right {
   width: 50%;
   height: 80%;
+  margin-right: 5%;
+  background-color: #adadad;
+  border-radius: 2rem;
+}
+
+.connect-right h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.my-services {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 7rem;
+  padding: 1rem 1rem 1rem 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 5rem;
+  background-color: rgb(146, 146, 146);
+  border-radius: 2rem;
 }
+
+.service-title {
+  list-style-type: none;
+  font-size: 1.5rem;
+  color: #000000;
+  font-weight: bold;
+}
+
+.service-lists {
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 2.5rem;
+  color: #545454;
+}
+
+/*SAVING FOR FUTURE PURPOSES*/
+/*
 .contact-right form {
   height: 90%;
   width: 70%;
@@ -344,6 +379,7 @@ form input[type="submit"] {
   color: #a8a8a8;
   margin-top: 1rem;
 }
+*/
 
 /*FOOTER*/
 footer,

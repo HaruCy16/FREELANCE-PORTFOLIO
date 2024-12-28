@@ -87,7 +87,7 @@ setInterval(myTitleChanged, 3000);
 
 myTitleChanged();
 
-/*SUBMIT BUTTON WHEN CLICK SHOW UNDER DEVELOP*/
+/*SUBMIT BUTTON WHEN CLICK SHOW UNDER DEVELOP
 let submitBtn = document.getElementById("submitBtn");
 submitBtn.addEventListener("click", function () {
   alert("Form back-end is under development");
@@ -96,3 +96,4 @@ submitBtn.addEventListener("click", function () {
   );
   alert("Thank you for understanding");
 });
+*/
