@@ -257,6 +257,13 @@ nav a:hover {
   text-align: center;
 }
 
+.projects-footer a {
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  text-decoration: none;
+  gap: 1rem;
+}
+
 /*CONTACTS SECTION*/
 .connect-content {
   height: 85%;
