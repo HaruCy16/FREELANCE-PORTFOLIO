@@ -12,24 +12,46 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 /*NAVIGATION AUTO HIDE WHEN SCROLL*/
 let lastScrollPosition = 0;
 let isHidden = true; // Track if the navbar is hidden
-const navbar = document.getElementById("navigationBar");
+const navbar = document.getElementById("burgerMenu");
 
 window.addEventListener("scroll", () => {
   const currentScrollPosition = window.pageYOffset;
 
   if (currentScrollPosition < lastScrollPosition && isHidden) {
-    // Scrolling up: Show the navbar smoothly
-    navbar.style.transform = "translateY(0)";
-    navbar.style.transition = "top 2s ease-in";
     isHidden = false;
   } else if (currentScrollPosition > lastScrollPosition && !isHidden) {
-    navbar.style.transform = "translateY(-100%)";
-    navbar.style.transition = "top 2s ease-in-out";
     isHidden = true;
   }
 
   lastScrollPosition = currentScrollPosition; // Update the scroll position
+
+  // Hide nav links on mobile when scrolling
+  if (window.innerWidth <= 768) {
+    const navLinks = document.getElementById("navLinks");
+    if (navLinks.classList.contains("active")) {
+      navLinks.classList.remove("active");
+    }
+  }
 });
+
+/*NAVIGATION IN MOBILE*/
+
+/*Burger menu*/
+document.getElementById("burgerMenu").addEventListener("click", function () {
+  document.getElementById("navLinks").classList.toggle("active");
+});
+
+/* Hide nav on touch outside */
+document.addEventListener("touchstart", function (e) {
+  const navLinks = document.getElementById("navLinks");
+  const burgerMenu = document.getElementById("burgerMenu");
+
+  if (!navLinks.contains(e.target) && !burgerMenu.contains(e.target)) {
+    navLinks.classList.remove("active");
+  }
+});
+
+document.getElementsByClassName("nav-links");
 
 /*HERO SECTION IMAGE CHANGED EVERY 3 SECS*/
 let heroImage = document.getElementById("heroImage");
@@ -86,14 +108,3 @@ function myTitleChanged() {
 setInterval(myTitleChanged, 3000);
 
 myTitleChanged();
-
-/*SUBMIT BUTTON WHEN CLICK SHOW UNDER DEVELOP
-let submitBtn = document.getElementById("submitBtn");
-submitBtn.addEventListener("click", function () {
-  alert("Form back-end is under development");
-  alert(
-    "Please contact through email/phone number or any of my social media links"
-  );
-  alert("Thank you for understanding");
-});
-*/
