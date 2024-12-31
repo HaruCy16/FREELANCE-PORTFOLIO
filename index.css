@@ -66,17 +66,6 @@ nav a:hover {
   color: rgb(16, 16, 70);
 }
 
-/* Burger menu styles */
-.burger-menu {
-  width: 2rem;
-  display: none;
-  cursor: pointer;
-}
-
-.burger-menu i {
-  font-size: 2rem;
-}
-
 /*HERO SECTION*/
 #hero {
   display: flex;
@@ -159,7 +148,7 @@ nav a:hover {
 .about-profile img {
   width: 550px;
   height: 550px;
-  border-radius: 33% 67% 22% 78% / 73% 11% 89% 27%;
+  border-radius: 34% 66% 75% 25% / 22% 54% 46% 78%;
   object-fit: cover;
   margin-left: 20rem;
 }
@@ -258,7 +247,7 @@ nav a:hover {
 }
 
 /*CONTACTS SECTION*/
-.connect-content {
+.contacts-content {
   height: 85%;
   width: 100%;
   display: flex;
@@ -267,74 +256,93 @@ nav a:hover {
 }
 
 /*CONTACT INFO*/
-.connect-left {
+.contacts-left {
   padding-left: 10rem;
   width: 50%;
   height: 85%;
 }
-.connect-info h2 {
+.contact-info h2 {
   font-size: 150px;
   text-align: justify;
   margin: 0;
 }
-.connect-info p {
+.contact-info p {
   font-size: 1.5rem;
 }
 
 /*SOCIAL MEDIA LINKS*/
-.connect-links {
+.contact-links {
   display: flex;
   gap: 5rem;
 }
-.connect-links a {
+.contact-links a {
   text-decoration: none;
   color: rgb(0, 0, 0);
   font-size: 2rem;
 }
 
-.connect-links a:hover {
+.contact-links a:hover {
   color: rgb(0, 60, 172);
 }
 
-/*SERVICES*/
-.connect-right {
+/*CONTACT FORM*/
+.contact-right {
   width: 50%;
   height: 80%;
-  margin-right: 5%;
-  background-color: #adadad;
-  border-radius: 2rem;
-}
-
-.connect-right h2 {
-  text-align: center;
-  font-size: 3rem;
-}
-
-.my-services {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 7rem;
+}
+.contact-right form {
+  height: 90%;
+  width: 70%;
   padding: 1rem 1rem 1rem 1rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  margin-top: 5rem;
-  background-color: rgb(146, 146, 146);
   border-radius: 2rem;
+  background-color: #cfcccc;
 }
 
-.service-title {
-  list-style-type: none;
-  font-size: 1.5rem;
-  color: #000000;
+form label {
+  font-size: 2rem;
   font-weight: bold;
 }
 
-.service-lists {
-  font-size: 1.5rem;
-  font-weight: normal;
-  line-height: 2.5rem;
-  color: #545454;
+form input {
+  height: 3rem;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  background-color: #545454;
+  border-radius: 2rem;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+form input::placeholder {
+  font-size: 1rem;
+  color: #a8a8a8;
+  padding-left: 1rem;
+}
+
+form textarea {
+  height: 40%;
+  width: 100%;
+  background-color: #545454;
+  color: #ffffff;
+  border-radius: 1rem;
+  border: none;
+}
+
+form textarea::placeholder {
+  font-size: 1rem;
+  color: #a8a8a8;
+  padding-left: 1rem;
+}
+
+form input[type="submit"] {
+  height: 2.4rem;
+  width: 4.5rem;
+  color: #a8a8a8;
+  margin-top: 1rem;
 }
 
 /*FOOTER*/
@@ -344,170 +352,4 @@ footer p {
   background-color: rgb(192, 192, 192);
   text-align: center;
   border: none;
-}
-
-/*MEDIA QUERIES*/
-@media (max-width: 768px) {
-  /*MAIN STYLES*/
-  section {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
-
-  .section-header {
-    height: 5%;
-    font-size: 1rem;
-  }
-
-  /*NAVIGATION*/
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    gap: 1rem;
-    position: fixed;
-    top: 1rem;
-    left: 1rem;
-    background-color: #9c9c9c;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .burger-menu {
-    display: block;
-    cursor: pointer;
-    text-align: start;
-    padding-left: 1rem;
-  }
-  /*HERO*/
-  #hero {
-    flex-direction: column;
-  }
-
-  .profile-image {
-    display: none;
-  }
-
-  .intro {
-    width: 100%;
-    text-align: center;
-    margin-right: 0;
-  }
-
-  .intro h1 {
-    font-size: 4rem;
-  }
-
-  #myTitle {
-    font-size: 1.5rem;
-  }
-  /*ABOUT*/
-  .about-content {
-    flex-direction: column;
-  }
-
-  .about-profile {
-    width: 70%;
-  }
-
-  .about-profile img {
-    height: 300px;
-    width: 300px;
-    margin-left: 0;
-  }
-
-  .about-description {
-    width: 95%;
-    margin: 0;
-  }
-
-  .about-description p {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-
-  /*SKILLS*/
-  .skills-content {
-    overflow-y: scroll;
-    white-space: nowrap;
-    display: flex;
-    flex-direction: row;
-    margin-top: 30%;
-  }
-
-  .my-skill {
-    margin-left: 4rem;
-    margin-right: 3rem;
-  }
-
-  .my-skill img {
-    height: 200px;
-    width: 300px;
-  }
-
-  /*PROJECTS*/
-  .projects-content {
-    overflow-y: scroll;
-    white-space: nowrap;
-    justify-content: start;
-    align-items: start;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-
-  .projects-list {
-    gap: 5rem;
-  }
-
-  .my-projects {
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-
-  /*CONNECT*/
-  #connect {
-    height: 100%;
-  }
-
-  #connect .section-header {
-    height: auto;
-  }
-
-  #connect .section-header h2 {
-    margin-bottom: 0;
-  }
-
-  .connect-content {
-    flex-direction: column-reverse;
-  }
-
-  .connect-right {
-    display: none;
-  }
-
-  /*bottom*/
-  .connect-left {
-    width: 100%;
-    padding-left: 0;
-  }
-
-  .connect-info {
-    text-align: center;
-  }
-
-  .connect-info h2 {
-    font-size: 6rem;
-    text-align: center;
-  }
-
-  .connect-links {
-    align-items: center;
-    justify-content: center;
-  }
 }
