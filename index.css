@@ -507,23 +507,41 @@ footer p {
   }
 
   /*PROJECTS*/
-  .projects-content {
-    overflow-y: scroll;
-    white-space: nowrap;
-    justify-content: start;
-    align-items: start;
-    margin-left: 10%;
-    margin-right: 10%;
+  /*HEADER*/
+  .projects-header {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
   }
 
+  /*PROJECT LIST*/
+
+  /*WEB DEVELOPMENT*/
+  /* .projects-content {
+    overflow-x: auto;
+    width: 100%;
+  } */
+
+  /*WEB DEVELOPMENT*/
   .projects-list {
-    gap: 5rem;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    padding-bottom: 1rem;
   }
 
-  .my-projects {
-    margin-left: 2rem;
-    margin-right: 2rem;
+  /*VIDEO EDITING*/
+  .sample-projects {
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    padding-bottom: 1rem;
   }
+
+  /*VIDEO EDITING*/
 
   /*CONNECT*/
   #connect {
