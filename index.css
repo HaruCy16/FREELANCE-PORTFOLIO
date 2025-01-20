@@ -221,12 +221,28 @@ nav a:hover {
 /*PROJECTS SECTION*/
 .projects-content {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
 }
 
-/*PROJECTS LIST*/
+.project-title {
+  font-weight: bold;
+  text-align: center;
+}
+/* #webDevelopment,
+#videoEditing {
+  width: 100% ;
+} */
+
+/*PROJECTS HEADER*/
+.projects-header {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*WEB DEVELOPMENT*/
 .projects-list {
   display: flex;
   gap: 3rem;
@@ -252,16 +268,42 @@ nav a:hover {
   transition: transform 0.5s;
 }
 
-/*PROJECTS FOOTER*/
-.projects-footer {
-  text-align: center;
+/*VIDEO EDITING*/
+.sample-projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
 
-.projects-footer a {
-  color: rgb(0, 0, 0);
-  font-size: 1rem;
-  text-decoration: none;
-  gap: 1rem;
+.my-edits img {
+  height: 30rem;
+  width: 45rem;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+/*BUTTON PROJECTS*/
+#switchProjects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#switchProjects button {
+  background-color: rgb(134, 134, 134);
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*ACTIVE AND HIDDEN*/
+.active {
+  display: block;
+}
+
+.hidden {
+  display: none;
 }
 
 /*CONTACTS SECTION*/
@@ -293,13 +335,19 @@ nav a:hover {
   display: flex;
   gap: 5rem;
 }
-.connect-links a {
+/*Email Link*/
+.connect-info p a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+}
+.connect-left a {
   text-decoration: none;
   color: rgb(0, 0, 0);
   font-size: 2rem;
 }
 
-.connect-links a:hover {
+.connect-left a:hover {
   color: rgb(0, 60, 172);
 }
 
@@ -459,23 +507,41 @@ footer p {
   }
 
   /*PROJECTS*/
-  .projects-content {
-    overflow-y: scroll;
-    white-space: nowrap;
-    justify-content: start;
-    align-items: start;
-    margin-left: 10%;
-    margin-right: 10%;
+  /*HEADER*/
+  .projects-header {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
   }
 
+  /*PROJECT LIST*/
+
+  /*WEB DEVELOPMENT*/
+  /* .projects-content {
+    overflow-x: auto;
+    width: 100%;
+  } */
+
+  /*WEB DEVELOPMENT*/
   .projects-list {
-    gap: 5rem;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    padding-bottom: 1rem;
   }
 
-  .my-projects {
-    margin-left: 2rem;
-    margin-right: 2rem;
+  /*VIDEO EDITING*/
+  .sample-projects {
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    padding-bottom: 1rem;
   }
+
+  /*VIDEO EDITING*/
 
   /*CONNECT*/
   #connect {
