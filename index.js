@@ -124,13 +124,13 @@ switchBtn.addEventListener("click", () => {
     webDev.classList.add("hidden");
     videoEditing.classList.remove("hidden");
     videoEditing.classList.add("active");
-    switchBtn.innerHTML = "&larr;";
+    switchBtn.innerHTML = "Web Development";
   } else if (videoEditing.classList.contains("active")) {
     // Opposite
     videoEditing.classList.remove("active");
     videoEditing.classList.add("hidden");
     webDev.classList.remove("hidden");
     webDev.classList.add("active");
-    switchBtn.innerHTML = "	&rarr;";
+    switchBtn.innerHTML = "Video Editing";
   }
 });

@@ -523,25 +523,48 @@ footer p {
 
   /*WEB DEVELOPMENT*/
   .projects-list {
-    overflow-x: auto;
-    white-space: nowrap;
-    display: flex;
-    flex-direction: row;
-    width: max-content;
-    padding-bottom: 1rem;
+    display: flex; /* Arrange items in a horizontal row */
+    gap: 15rem; /* Add space between items */
+    max-width: 250px; /* Ensure container uses full width */
+    overflow-x: scroll; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Disable vertical scrolling */
+    white-space: nowrap; /* Prevent wrapping of elements */
+    padding-bottom: 10px; /* Add padding for scrollbar visibility */
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+    padding-left: 3rem;
+  }
+
+  .my-projects {
+    flex: 0 0 auto; /* Prevent items from shrinking or stretching */
+    width: 200px; /* Set a fixed width for each item */
+    text-align: center; /* Center-align content */
   }
 
   /*VIDEO EDITING*/
   .sample-projects {
-    overflow-x: auto;
-    white-space: nowrap;
-    display: flex;
-    flex-direction: row;
-    width: max-content;
-    padding-bottom: 1rem;
+    display: flex; /* Arrange items in a horizontal row */
+    gap: 10rem; /* Add space between items */
+    max-width: 250px; /* Ensure container uses full width */
+    overflow-x: scroll; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Disable vertical scrolling */
+    white-space: nowrap; /* Prevent wrapping of elements */
+    padding-bottom: 10px; /* Add padding for scrollbar visibility */
+    padding-left: 3rem;
   }
 
-  /*VIDEO EDITING*/
+  /* .my-edits {
+
+  } */
+
+  .my-edits img {
+    width: 300px;
+    height: 450px;
+  }
+
+  /*BUTTON SWAP*/
+  #switchView {
+    margin-top: 1rem;
+  }
 
   /*CONNECT*/
   #connect {
@@ -550,10 +573,6 @@ footer p {
 
   #connect .section-header {
     height: auto;
-  }
-
-  #connect .section-header h2 {
-    margin-bottom: 0;
   }
 
   .connect-content {
