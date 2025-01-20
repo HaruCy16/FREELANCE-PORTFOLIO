@@ -108,3 +108,29 @@ function myTitleChanged() {
 setInterval(myTitleChanged, 3000);
 
 myTitleChanged();
+
+/*PROJECTS LOGIC, CHANGING VIEW FROM WEB DEV TO VIDEO EDIT AND VICE VERSA*/
+
+/*Variables*/
+const videoEditing = document.getElementById("videoEditing");
+const webDev = document.getElementById("webDevelopment");
+const switchBtn = document.getElementById("switchView");
+
+/*FUNCTION CHANGE VIEW WHEN CLICK*/
+switchBtn.addEventListener("click", () => {
+  if (webDev.classList.contains("active")) {
+    // Hide web development and show video editing
+    webDev.classList.remove("active");
+    webDev.classList.add("hidden");
+    videoEditing.classList.remove("hidden");
+    videoEditing.classList.add("active");
+    switchBtn.innerHTML = "&larr;";
+  } else if (videoEditing.classList.contains("active")) {
+    // Opposite
+    videoEditing.classList.remove("active");
+    videoEditing.classList.add("hidden");
+    webDev.classList.remove("hidden");
+    webDev.classList.add("active");
+    switchBtn.innerHTML = "	&rarr;";
+  }
+});
