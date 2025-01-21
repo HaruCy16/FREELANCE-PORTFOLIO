@@ -114,9 +114,9 @@ myTitleChanged();
 /*Variables*/
 const videoEditing = document.getElementById("videoEditing");
 const webDev = document.getElementById("webDevelopment");
-const switchBtn = document.getElementById("switchView");
+const switchBtn = document.getElementById("swapProjects");
 
-/*FUNCTION CHANGE VIEW WHEN CLICK*/
+/*FUNCTION CHANGE PROJECTS WHEN CLICK, WEB DEV TO VID EDITING VICE VERSA*/
 switchBtn.addEventListener("click", () => {
   if (webDev.classList.contains("active")) {
     // Hide web development and show video editing
@@ -132,5 +132,25 @@ switchBtn.addEventListener("click", () => {
     webDev.classList.remove("hidden");
     webDev.classList.add("active");
     switchBtn.innerHTML = "Video Editing";
+  }
+});
+
+/*VIDEO EDITING CHANGE PROJECT, SHORT TO LONG*/
+const swapBtn = document.getElementById("swapVideoEditing");
+const shortForm = document.getElementById("shortForm");
+const longForm = document.getElementById("longForm");
+
+swapBtn.addEventListener("click", (e) => {
+  const shortFormDisplay = window.getComputedStyle(shortForm).display;
+  const longFormDisplay = window.getComputedStyle(longForm).display;
+
+  if (shortFormDisplay === "block") {
+    shortForm.style.display = "none";
+    longForm.style.display = "block";
+    swapBtn.innerHTML = '<i class="fa-solid fa-arrow-left"></i>';
+  } else if (longFormDisplay === "block") {
+    longForm.style.display = "none";
+    shortForm.style.display = "block";
+    swapBtn.innerHTML = '<i class="fa-solid fa-arrow-right"></i>';
   }
 });
