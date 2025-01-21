@@ -283,6 +283,10 @@ nav a:hover {
   border-radius: 2rem;
 }
 
+#swapVideoEditing {
+  display: none;
+}
+
 /*BUTTON PROJECTS*/
 #switchProjects {
   display: flex;
@@ -541,27 +545,33 @@ footer p {
   }
 
   /*VIDEO EDITING*/
-  .sample-projects {
-    display: flex; /* Arrange items in a horizontal row */
-    gap: 10rem; /* Add space between items */
-    max-width: 250px; /* Ensure container uses full width */
-    overflow-x: scroll; /* Enable horizontal scrolling */
-    overflow-y: hidden; /* Disable vertical scrolling */
-    white-space: nowrap; /* Prevent wrapping of elements */
-    padding-bottom: 10px; /* Add padding for scrollbar visibility */
-    padding-left: 3rem;
-  }
-
-  /* .my-edits {
-
-  } */
-
   .my-edits img {
     width: 300px;
     height: 450px;
   }
 
-  /*BUTTON SWAP*/
+  /*Swap Video Edit Projects*/
+  #swapVideoEditing {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    background-color: rgb(170, 170, 170);
+    margin-right: 1rem;
+    padding: 5px;
+    border-radius: 50%;
+    border: none;
+  }
+
+  #shortForm {
+    display: block;
+  }
+
+  #longForm {
+    display: none;
+  }
+
+  /*BUTTON SWAP PROJECT*/
   #switchView {
     margin-top: 1rem;
   }
