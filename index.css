@@ -283,6 +283,11 @@ nav a:hover {
   border-radius: 2rem;
 }
 
+#shortForm,
+#longForm {
+  display: block;
+}
+
 #swapVideoEditing {
   display: none;
 }
