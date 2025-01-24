@@ -263,7 +263,7 @@ nav a:hover {
   border-radius: 2rem;
 }
 
-.my-projects img:hover {
+.projects-content img:hover {
   transform: scale(1.1);
   transition: transform 0.5s;
 }
@@ -281,6 +281,11 @@ nav a:hover {
   width: 45rem;
   object-fit: cover;
   border-radius: 2rem;
+}
+
+#shortForm,
+#longForm {
+  display: block;
 }
 
 #swapVideoEditing {
@@ -572,7 +577,7 @@ footer p {
   }
 
   /*BUTTON SWAP PROJECT*/
-  #switchView {
+  #switchProjects {
     margin-top: 1rem;
   }
 
