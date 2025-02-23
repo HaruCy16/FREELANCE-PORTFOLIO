@@ -1,8 +1,14 @@
-# Node modules (if using npm)
+# Ignore environment variables (DO NOT PUSH API KEYS)
+.env
+# Ignore node_modules (if you ever use npm in the future)
 node_modules/
-package-lock.json
-pnpm-lock.yaml
-yarn.lock
-
-# Vercel Build Output
+# Ignore Vercel build and output files
 .vercel/
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
