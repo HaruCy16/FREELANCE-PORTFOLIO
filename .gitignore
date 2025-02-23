@@ -1,8 +1,8 @@
-# Node modules (if using npm)
-node_modules/
-package-lock.json
-pnpm-lock.yaml
-yarn.lock
+# Ignore environment variables (DO NOT PUSH API KEYS)
+.env
 
-# Vercel Build Output
+# Ignore node_modules (if you ever use npm in the future)
+node_modules/
+
+# Ignore Vercel build and output files
 .vercel/
