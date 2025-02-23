@@ -604,16 +604,29 @@ footer p {
     height: auto;
   }
 
-  .contact-content {
-    flex-direction: column-reverse;
+  .contacts-content {
+    margin: 0 auto;
+    width: 100%;
   }
 
-  .contact-right {
+  /*FORMS CONTACT MOBILE VERSION*/
+  .contacts-left {
     display: none;
   }
 
+  .contact-right form {
+    width: 300%;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  /* .contact-right {
+    display: none;
+  } */
+
   /*bottom*/
-  .contact-left {
+
+  /* .contact-left {
     width: 100%;
     padding-left: 0;
   }
@@ -630,5 +643,5 @@ footer p {
   .contact-links {
     align-items: center;
     justify-content: center;
-  }
+  } */
 }
