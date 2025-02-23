@@ -1,0 +1,8 @@
+# Node modules (if using npm)
+node_modules/
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Vercel Build Output
+.vercel/

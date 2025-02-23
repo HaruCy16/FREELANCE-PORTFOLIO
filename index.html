@@ -180,18 +180,19 @@
         <button type="button" id="swapProjects" class="switch" title="switch">Video Editing</button>
       </div>
     </section>
-    <!--CONNECT SECTION-->
-    <section id="connect">
+    <!--CONTACTS SECTION-->
+    <section id="contacts">
       <div class="section-header">
-        <h2>Connect</h2>
+        <h2>Contacts</h2>
       </div>
-      <div class="connect-content">
-        <div class="connect-left">
-          <div class="connect-info">
+      <div class="contacts-content">
+        <div class="contacts-left">
+          <div class="contact-info">
             <h2>Connect with Me!</h2>
-            <p><i class="fa-solid fa-envelope"></i><a href="mailto:cywilson165@gmail.com" target="_blank" title="Send Email"> cywilson165@gmail.com</a></p>
+            <p><i class="fa-solid fa-envelope"></i> <a href="mailto:cywilson165@gmail.com" title="Visit Email">cywilson165@gmail.com</a></p>
+            <p><i class="fa-solid fa-phone"></i> (+63) 991 083 2030</p>
           </div>
-          <div class="connect-links">
+          <div class="contact-links">
             <a href="https://github.com/HaruCy16" title="Github" target="_blank" rel="noopener">
               <i class="fa-brands fa-github"></i>
             </a>
@@ -206,40 +207,26 @@
             </a>
           </div>
         </div>
-        <div class="connect-right">
-          <h2>Services</h2>
-          <ul class="my-services">
-            <li class="service-title">Web Development Services:
-              <ul class="service-lists">
-                <li>UI/UX Design</li>
-                <li>UI/UX Prototyping</li>
-                <li>Responsive Design</li>
-                <li>Landing pages</li>
-                <li>Portfolio Websites</li>
-                <li>Javascript programming</li>
-                <li>Front-End Development</li>
-                <li>Website Development</li>
-              </ul>
-            </li>
-            <li class="service-title">Video Editing Services:
-              <ul class="service-lists">
-                <li>Short Form Edit</li>
-                <li>Long Form Edit</li>
-                <li>Trailers (Any Genre)</li>
-                <li>Vlogs</li>
-                <li>Music Videos</li>
-                <li>Motion Graphics</li>
-                <li>Advertisement Videos</li>
-                <li>Documentary Videos</li>
-              </ul>
-            </li>
-          </ul>
+        <div class="contact-right">
+          <form id="contactForm">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Your Name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="your.email@gmail.com" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea><br>
+            <input type="submit" value="Submit" id="submitBtn">
+          </form>
         </div>
       </div>
     </section>
     <footer>
       <p>&copy;2025 Cyrus Wilson. All rights reserved</p>
     </footer>
-    <script src="index.js"></script>
+    <script src="javascript/nav.js"></script>
+    <script src="javascript/hero.js"></script>
+    <script src="javascript/project.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="javascript/sendEmail.js"></script>
   </body>
 </html>
