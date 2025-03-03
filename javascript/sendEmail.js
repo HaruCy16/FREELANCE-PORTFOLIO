@@ -20,5 +20,5 @@ fetch("/api/env")
       });
   })
   .catch((error) =>
-    console.error("Error fetching environment variables:", error)
+    alert("Error fetching environment variables: " + error.message)
   );
