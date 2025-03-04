@@ -1,5 +1,5 @@
 # Ignore environment variables (DO NOT PUSH API KEYS)
-env
+.env
 # Ignore node_modules (if you ever use npm in the future)
 node_modules/
 # Ignore Vercel build and output files
