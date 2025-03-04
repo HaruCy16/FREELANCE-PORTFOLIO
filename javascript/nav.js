@@ -1,4 +1,6 @@
-/*Navigation*/
+//Navigation
+
+//NAVIGATION SMOOTH WHEN TOGGLED
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -9,31 +11,18 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-// /*NAVIGATION AUTO HIDE WHEN SCROLL*/
-let lastScrollPosition = 0;
-let isHidden = true; // Track if the navbar is hidden
-const navbar = document.getElementById("navigationBar");
+//NAVIGATION AUTO HIDE WHEN SCROLL
+let prevScrollpos = window.scrollY;
 
-window.addEventListener("scroll", () => {
-  const currentScrollPosition = window.pageYOffset;
-
-  if (currentScrollPosition < lastScrollPosition && isHidden) {
-    isHidden = false;
-  } else if (currentScrollPosition > lastScrollPosition && !isHidden) {
-    isHidden = true;
+window.onscroll = function () {
+  let currentScrollPos = window.scrollY;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navigationBar").style.top = "0";
+  } else {
+    document.getElementById("navigationBar").style.top = "-100px";
   }
-
-  lastScrollPosition = currentScrollPosition; // Update the scroll position
-
-  // Hide nav links on mobile when scrolling
-  if (window.innerWidth <= 768) {
-    const navLinks = document.getElementById("navLinks");
-    if (navLinks.classList.contains("active")) {
-      navLinks.classList.remove("active");
-    }
-  }
-});
-
+  prevScrollpos = currentScrollPos;
+};
 /*NAVIGATION IN MOBILE*/
 
 /*Burger menu*/
