@@ -16,9 +16,11 @@ fetch("/api/env")
             message: document.getElementById("message").value,
           })
           .then(() => alert("Message sent successfully!"))
-          .catch((error) => console.error("EmailJS Error:", error));
+          .catch((error) =>
+            alert("Error fetching environment variables: " + error.message)
+          );
       });
   })
   .catch((error) =>
-    console.error("Error fetching environment variables:", error)
+    console.log("Error fetching environment variables: " + error.message)
   );

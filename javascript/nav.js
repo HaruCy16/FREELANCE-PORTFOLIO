@@ -9,10 +9,10 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-/*NAVIGATION AUTO HIDE WHEN SCROLL*/
+// /*NAVIGATION AUTO HIDE WHEN SCROLL*/
 let lastScrollPosition = 0;
 let isHidden = true; // Track if the navbar is hidden
-const navbar = document.getElementById("burgerMenu");
+const navbar = document.getElementById("navigationBar");
 
 window.addEventListener("scroll", () => {
   const currentScrollPosition = window.pageYOffset;
