@@ -19,7 +19,7 @@ window.onscroll = function () {
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navigationBar").style.top = "0";
   } else {
-    document.getElementById("navigationBar").style.top = "-100px";
+    document.getElementById("navigationBar").style.top = "-400px";
   }
   prevScrollpos = currentScrollPos;
 };
