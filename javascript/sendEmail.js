@@ -1,3 +1,29 @@
+//ENSURE INPUTS
+//NAME INPUT
+const nameInput = document.getElementById("name");
+
+if (nameInput) {
+  nameInput.addEventListener("input", function () {
+    nameInput.value = nameInput.value.replace(/[^a-zA-Z\s]/g, "");
+    if (nameInput.value.length > 50) {
+      nameInput.value = nameInput.value.substring(0, 50);
+    }
+  });
+}
+
+//EMAIL INPUT
+function validateEmailInput() {
+  const emailElement = document.getElementById("email");
+  const emailValue = emailElement.value;
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (emailRegex.test(emailValue)) {
+    emailElement.placeholder = ""; // This now refers to the input element
+  } else {
+    alert("Please enter a valid email address.");
+  }
+}
+
 //SEND EMAIL
 fetch("/api/env")
   .then((response) => response.json())
